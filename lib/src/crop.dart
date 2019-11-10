@@ -99,6 +99,18 @@ class CropState extends State<Crop> with TickerProviderStateMixin, Drag {
           );
   }
 
+  Rect get absArea {
+    return _area;
+  }
+
+  Rect get absView {
+    return _view;
+  }
+
+  double get absScale {
+    return _scale;
+  }
+
   bool get _isEnabled => !_view.isEmpty && _image != null;
 
   @override
